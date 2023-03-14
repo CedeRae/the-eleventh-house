@@ -1,0 +1,164 @@
+/*Header bar*/
+.navbar {
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    top: 0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 9;
+}
+
+/*Search bar*/
+.search {
+    display: flex;
+    top: 0;
+    height: 60px;
+    width: 100%;
+    background-color: #828B7D;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+}
+
+.search-box {
+    width: 65%;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 1px solid #d1d1d1;
+    color: #a9a9a9;
+}
+
+.search-button {
+    width: 20%;
+    height: 42px;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: black;
+    color: white;
+    font-size: 15px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/*middle section*/
+.navbar .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 1px solid #d1d1d1;
+}
+
+/*Shop Logo*/
+.logo {
+    display: flex;
+    align-items: flex-end;
+}
+
+#logo-img{
+    width: 129px;
+    height: 106px;
+}
+
+#title {
+    font-family: 'MedievalSharp';
+    font-size: 48px;
+}
+
+
+/*nav icons*/
+.icons a {
+    color: black;
+    margin: 10px;
+    font-size: 36px;
+    opacity: 0.75;
+}
+
+
+
+/*product options*/
+.nav-list {
+    font-size: 24px;   
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul li {
+    margin: 10px 20px;
+    cursor: pointer;
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+    opacity: 0.5;
+    transition: .5s;
+}
+
+ul li a:hover {
+    opacity: 1;
+}
+
+#check   {
+    display: none;
+}
+
+label #down,
+label #up {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+
+    /*header*/
+    #logo-img {
+        height: 64.5px;
+        width: unset;
+    }
+
+    #title {
+        font-size: 20px;
+    }
+
+    .icons a {
+        font-size: 24px;
+        margin: 5px;
+    }
+    /*drop down menu*/
+    label #down {
+        display: block;
+    }
+
+    .nav-list {
+        text-align: center;
+        display: unset;
+    }
+
+    ul {
+        height: 0px;
+        overflow: hidden;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+    
+    #check:checked ~ ul{
+        height: unset;
+    }
+
+    #check:checked ~ label #down {
+        display: none;
+    }
+
+    #check:checked ~ label #up {
+        display: block;
+    }
+
+
+}
