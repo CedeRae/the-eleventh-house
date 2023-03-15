@@ -38,7 +38,7 @@
 }
 
 .product-section h2 {
-    margin: 20px;
+    margin: 40px;
     text-decoration: overline;
 }
 
@@ -46,7 +46,7 @@
 .container {
     display: grid;
     grid-template-columns: repeat(5, 200px);
-    gap: 20px;
+    gap: 10px;
     margin: 0 10px;
     overflow: scroll;
 }
@@ -54,6 +54,9 @@
 .container a {
     text-decoration: none;
     text-align: center;
+    margin: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
 }
 
 .container a img {
@@ -64,10 +67,40 @@
 
 /*footer*/
 .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     background: black;
     color:  white;
     grid-column: span 5;
     padding: 40px;
+}
+
+#foot-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#foot-logo img {
+    height: 70%;
+    width: 50%;
+}
+
+.footer h1 {
+    font-family: 'MedievalSharp';
+}
+
+.footer #links {
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+#links a {
+    color: white;
 }
 
 @media only screen and (max-width: 600px) {

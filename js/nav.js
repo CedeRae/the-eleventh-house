@@ -10,7 +10,7 @@ const createNav = () => {
     <div class="header">
         <div class="logo">
             <img id="logo-img" src="images/LogoMakr-0h38RJ.png" alt="hippie sun/moon astrology logo">
-            <h1 id="title">eleventh house</h1>
+            <h1 id="title">the eleventh house</h1>
         </div>
         <div class="icons">
             <a id="user" href="#"><i class="fa fa-user-circle-o"></i></i></a>
