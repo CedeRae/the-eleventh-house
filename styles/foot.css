@@ -1,0 +1,41 @@
+/*footer logo*/
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: black;
+    color:  white;
+}
+
+#foot-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+}
+
+#foot-logo img {
+    height: 15%;
+    width: 15%;
+}
+
+#foot-logo h1 {
+    font-family: 'MedievalSharp';
+}
+
+/*footer lists*/
+.footer h4 {
+    text-decoration: underline;
+}
+
+
+/*footer disclaimer*/
+.footer #about {
+    margin:  0 20px;
+}
+
+.footer a {
+    color: white;
+    margin-right: 20px;
+}

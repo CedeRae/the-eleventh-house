@@ -58,8 +58,8 @@
 }
 
 #logo-img{
-    width: 129px;
-    height: 106px;
+    width: 25%;
+    height: 25%;
 }
 
 #title {
@@ -83,7 +83,7 @@
     font-size: 24px;   
 }
 
-ul {
+.nav-list ul {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -118,10 +118,10 @@ label #up {
 @media only screen and (max-width: 736px) {
 
     /*header*/
-    #logo-img {
+    /*#logo-img {
         height: 64.5px;
         width: unset;
-    }
+    }*/
 
     #title {
         font-size: 20px;
