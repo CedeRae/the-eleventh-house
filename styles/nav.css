@@ -58,8 +58,8 @@
 }
 
 #logo-img{
-    width: 25%;
-    height: 25%;
+    width: unset;
+    height: 100px;
 }
 
 #title {
@@ -118,10 +118,9 @@ label #up {
 @media only screen and (max-width: 736px) {
 
     /*header*/
-    /*#logo-img {
-        height: 64.5px;
-        width: unset;
-    }*/
+    #logo-img {
+        height: 50px;  
+    }
 
     #title {
         font-size: 20px;
