@@ -1,17 +1,144 @@
 @import 'nav.css';
+@import 'foot.css';
 
 * {
     font-family: 'Kanit', sans-serif;
     margin: 0;
 }
 
-/*hero section*/
+body {
+    margin-top: 200px;
+}
+
+h2 {
+    margin-left: 20px;
+}
+
+/*porducts*/
 .hero-section {
+    height: 100vh;
+    opacity: 0.75;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 48px;
+
+
+    background-image: url("../images/thom-bradley-mwa_nzFpnJw-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.hero-section h2 {
+    font-family: 'MedievalSharp';
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.container::-webkit-scrollbar {
+    display: none;
+}
+
+.container a {
+    text-decoration: none;
+    text-align: center;
+    flex: 0 0 auto;
+    width: 250px;
+    height: 450px;
+}
+
+.container a img {
+    height: 75%;
+    width: 75%;
+}
+
+.left, .right {
+    border: none;
+    background: none;
+    z-index: 8;
+    position: absolute;
+    opacity: 0.5;
+}
+
+.right {
+    right: 0;
+}
+
+#left:hover, #right:hover {
+    opacity: 1;
+}
+
+/*block section*/
+.collection {
+    display: grid;
+    grid-template-areas: 2;
+    gap: 5px;
+    margin: 10px;
+}
+
+#bohemian {
+    height: 100vh;;
+    opacity: 0.75;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url('../images/nicole-geri-At6KkzyQIgc-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#bohemian button {
+    background: none;
+    border: 4px Solid white;
+    color: white;
+    font-size: 38px;
+    height: 75px;
+    width: 75%;
+    cursor: pointer;
+}
+
+#hippie {
+    height: 100vh;
+    opacity: 0.75;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url('../images/brooke-cagle-ICFPv3xJY90-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#hippie button {
+    background: none;
+    border: 4px Solid white;
+    color: white;
+    font-size: 38px;
+    height: 75px;
+    width: 75%;
+    cursor: pointer;
+}
+
+#accessories {
+    grid-column: span 2;
     height: calc(100vh - 120px);
     width: 100%;
-    margin-top: 208px;
-
+    opacity: 0.75;
     display: flex;
+    justify-content: center;
+    align-items: center;
 
     background-image: url('../images/brooke-cagle-kElEigko7PU-unsplash.jpg');
     background-size: cover;
@@ -19,102 +146,17 @@
     background-position: center;
 }
 
-.info-box {
-    width: 491px;
-    height: 366px;
-    margin: 60px;
-    background: #828B7D;
-    color: antiquewhite;
-    border-radius: 5px;
-}
-
-.info-box h2 {
-    font-family: 'MedievalSharp';
-}
-
-.info-box h2, 
-.info-box p {
-    padding: 10px;
-}
-
-.product-section h2 {
-    margin: 40px;
-    text-decoration: overline;
-}
-
-/*porducts*/
-.container {
-    display: grid;
-    grid-template-columns: repeat(5, 200px);
-    gap: 10px;
-    margin: 0 10px;
-    overflow: scroll;
-}
-
-.container a {
-    text-decoration: none;
-    text-align: center;
-    margin: 20px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    
-}
-
-.container a img {
-    height: 75%;
-    width: 100%;
-}
-
-
-/*footer*/
-.footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background: black;
-    color:  white;
-    grid-column: span 5;
-    padding: 40px;
-}
-
-#foot-logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-}
-
-#foot-logo img {
-    height: 70%;
-    width: 50%;
-}
-
-.footer h1 {
-    font-family: 'MedievalSharp';
-}
-
-.footer #links {
+#accessories button {
+    background: none;
+    border: 4px Solid white;
     color: white;
-    display: flex;
-    flex-direction: column;
+    font-size: 38px;
+    height: 75px;
+    width: 75%;
+    cursor: pointer;
 }
 
-#links a {
-    color: white;
-}
 
 @media only screen and (max-width: 600px) {
-    .hero-section {
-        background-image: none;
-        height: 320px;
-        margin-top: 150px;
-    }
-
-    .info-box {
-        width:  100%;
-        height: auto;
-        margin: 0;
-        border-radius: 0;
-        
-    }
+ 
 }

@@ -27,8 +27,8 @@ const createNav = () => {
     <ul>
         <li><a href="index.html">Our picks</a></li>
         <li><a href="#">Tops</a></li>
-        <li><a href="#">Pants</a></li>
-        <li><a href="#">Skirts</a></li>
+        <li><a href="#">Bottoms</a></li>
+        <li><a href="#">Shoes</a></li>
         <li><a href="#">Accessories</a></li>
     </ul>
     </div>
