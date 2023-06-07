@@ -23,38 +23,60 @@
     </header>
 
     <main>
-        <h2>Product Name</h2>
-        <h1>$00.00</h1>
-        <section class="selection">
-            
-            <div class="current-selection">
-                <img src="images/crop1-1-mag.webp" alt="tie back crop top - magenta pattern - right side view">
-                    <div class="carousel">
-                        <img src="images/crop1-2-mag.webp" alt="tie back crop top - magenta pattern - left side view">
-                        <img src="images/crop1-3-mag.webp" alt="tie back crop top - magenta pattern - front view">
-                        <img src="images/crop1-4-mag.webp" alt="tie back crop top - magenta pattern - back view">
-                    </div>
-            </div>
-
-            <div class="product-description">
-                <p>A brief description of the product:</p>
-                <p>Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <div class="options">
-                    <h3>Other options</h3>
-                    <img src="images/crop1-1-black.webp" alt="tie back crop top - black solid">
-                    <img src="images/crop1-1-pur.webp" alt="tie back crop top - purple pattern">
-                    <img src="images/crop1-1-white.webp" alt="tie back crop top - white solid">
-                </div>
-                <div class="full-description">
-                    <h3>Full description</h3>
-                    <p>Material: Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
+        <!--image carousel-->
+        <div class="active-image">
+                <img src="images/crop1-1-mag.webp" alt="tie back crop top - magenta - right side view">  
+        </div>
+        
+        <!--product description and price-->
+        <div class="product-info">
+            <h1>Gypsy tie back crop top</h1>
             <br>
-            </div>
+            <h2>$00.00</h2>
+            <br>
+            <a href="#product-desc">Product details</a>
+            <br>
+        </div>
+
+        <!--color selection radio-->
+       <h3>Select color</h3>
+        <div class="colors">
+            <input type="radio" hidden id="magenta" class="color" name="color" value="magenta" checked>
+            <label for="magenta" class="color-selection check" id="magenta"></label>
+            <input type="radio" hidden id="black" name="color" value="black">
+            <label for="black" class="color-selection" id="black"></label>
+            <input type="radio" hidden id="purple" name="color" value="purple">
+            <label for="purple" class="color-selection" id="purple"></label>
+            <input type="radio" hidden id="white" name="color" value="white">
+            <label for="white" class="color-selection" id="white"></label>
+        </div>
+
+        <!--size selection radio-->
+        <h3>Select size</h3>
+        <div class="sizes">
+            <input type="radio" name="size" hidden id="size" checked>
+            <label for="size" class="size-selection check">XS</label>
+            <input type="radio" name="size" hidden id="size">
+            <label for="size" class="size-selection">S</label>
+            <input type="radio" name="size" hidden id="size">
+            <label for="size" class="size-selection">M</label>
+            <input type="radio" name="size" hidden id="size">
+            <label for="size" class="size-selection">L</label>
+        </div>
+
+        <!--check-out and save buttons-->
+        <button type="button" class="add-cart">Add to cart</button>
+        <button type="button" class="save-later">Save for later</button>
+
+        <!--detailed product description-->
+        <section id="product-desc">
+            <h3>Details</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </section>
 
+        <!--product carousel-->
         <section class="product-section">
-            <h2>Tops</h2>
+            <h2><a href="#">Tops</a></h2>
             <div class="container"> 
                 
                 <button class="left"> 
@@ -64,7 +86,7 @@
                     <i class="fa fa-angle-double-right" style="font-size:36px"></i>
                 </button>
     
-                <a href="#"><img src="images/crop1-1-mag.webp" alt="crop top magenta pattern">
+                <a href="product.html"><img src="images/crop1-1-mag.webp" alt="crop top magenta pattern">
                     <h3>Product</h3>
                     <h3>$00.00</h3>
                     <p>Short description</p>
@@ -115,6 +137,7 @@
 
     <script src="js/nav.js"></script>
     <script src="js/home.js"></script>
+    <script src="js/product.js"></script>
     <script src="js/foot.js"></script>
 </body>
 </html>
