@@ -58,8 +58,8 @@
 }
 
 #logo-img{
-    width: 25%;
-    height: 25%;
+    width: unset;
+    height: 100px;
 }
 
 #title {
@@ -71,9 +71,9 @@
 /*nav icons*/
 .icons a {
     color: black;
-    margin: 10px;
+    margin: 1rem;
     font-size: 36px;
-    opacity: 0.75;
+    /*opacity: 0.75;*/
 }
 
 
@@ -90,7 +90,7 @@
 }
 
 ul li {
-    margin: 10px 20px;
+    margin: 0 20px;
     cursor: pointer;
     list-style: none;
 }
@@ -118,10 +118,9 @@ label #up {
 @media only screen and (max-width: 736px) {
 
     /*header*/
-    /*#logo-img {
-        height: 64.5px;
-        width: unset;
-    }*/
+    #logo-img {
+        height: 50px;  
+    }
 
     #title {
         font-size: 20px;
@@ -132,33 +131,9 @@ label #up {
         margin: 5px;
     }
     /*drop down menu*/
-    label #down {
-        display: block;
-    }
-
     .nav-list {
-        text-align: center;
-        display: unset;
-    }
-
-    ul {
-        height: 0px;
-        overflow: hidden;
-        text-align: center;
-        flex-wrap: wrap;
-    }
-    
-    #check:checked ~ ul{
-        height: unset;
-    }
-
-    #check:checked ~ label #down {
         display: none;
     }
 
-    #check:checked ~ label #up {
-        display: block;
-    }
-
-
+    
 }

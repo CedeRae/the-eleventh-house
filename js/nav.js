@@ -25,10 +25,11 @@ const createNav = () => {
         <i id="up" class="fa fa-angle-up"></i>
     </label>
     <ul>
-        <li><a href="index.html">Our picks</a></li>
+        <li><a href="index.html">Best Selling</a></li>
         <li><a href="#">Tops</a></li>
-        <li><a href="#">Bottoms</a></li>
-        <li><a href="#">Shoes</a></li>
+        <li><a href="#">Pants</a></li>
+        <li><a href="#">Skirts</a></li>
+        <li><a href="#">Winter</a></li>
         <li><a href="#">Accessories</a></li>
     </ul>
     </div>
