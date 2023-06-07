@@ -13,6 +13,7 @@ body {
 h2 {
     margin-left: 2rem;
     text-decoration: overline;
+    margin: 40px;
 }
 
 h2 a {
@@ -21,7 +22,7 @@ h2 a {
     cursor: pointer;
 }
 
-/*porducts*/
+/*hero section*/
 .hero-section {
     height: 100vh;
     opacity: 0.75;
@@ -44,6 +45,7 @@ h2 a {
     font-family: 'MedievalSharp';
 }
 
+/*porducts*/
 .container {
     display: flex;
     align-items: center;
@@ -85,7 +87,7 @@ button:hover {
     transform: scale(1.1);
 }
 
-/*collections section*/
+/*collections*/
 .collection {
     display: grid;
     grid-template-areas: 2;
