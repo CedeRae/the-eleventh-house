@@ -2,4 +2,136 @@
 @import 'home.css';
 @import 'foot.css';
 
+body {
+    padding-top: 150px;
+}
 
+h1 {
+    font-size: 48px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+/*product details section/ top section*/
+.product-details {
+    width: 100%;
+    display: flex;
+    margin: 0;
+}
+
+/*image carousel showing current selected image*/
+.image-carousel {
+    background-image: url("../images/crop1-1-mag.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 600px;
+    width: 40%;
+    
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.product-images img {
+    width: 100%;
+    height: 100px;
+    object-fit: contain;
+}
+
+.product-images {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+}
+
+.product-images img.active {
+    opacity: 0.5;
+}
+
+/*color selection*/
+.colors img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border: 100%;
+    border-radius: 100px;
+}
+
+.colors img:checked {
+    opacity: 0.5;
+}
+
+.colors {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;   
+}
+
+.product.info input:checked {
+    height: 80px;
+    width: 80px;
+}
+
+.size-selection {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 80px;
+    border-radius: 100px;
+}
+
+#product-desc {
+    margin: 40px;
+}
+/*size selection*/
+.sizes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.checkout {
+    padding: 20px;
+}
+
+@media only screen and (max-width: 700px) {
+
+    body {
+        padding-top: 90px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    /*image carousel displaying selected image*/
+    .image-carousel {
+        height: 400px;
+        margin: 10px;
+        background-size: contain;
+    }
+
+    .product-images {
+        margin: 0;
+        padding: 0;
+    }
+
+    /*product-options*/
+   .colors img{
+    height: 40px;
+    width: 40px;
+   }
+
+   .size-selection {
+    height: 40px;
+    width: 40px;
+   }
+}

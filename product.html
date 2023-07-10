@@ -23,56 +23,72 @@
     </header>
 
     <main>
-        <!--image carousel-->
-        <div class="active-image">
-                <img src="images/crop1-1-mag.webp" alt="tie back crop top - magenta - right side view">  
-        </div>
         
-        <!--product description and price-->
-        <div class="product-info">
-            <h1>Gypsy tie back crop top</h1>
-            <br>
-            <h2>$00.00</h2>
-            <br>
-            <a href="#product-desc">Product details</a>
-            <br>
-        </div>
+        <section class="product-details">
+            <!--image carousel-->
+            <div class="image-carousel">
+                <div class="product-images">
+                    <img src="images/crop1-1-mag.webp" alt="" class="active">
+                    <img src="images/crop1-2-mag.webp" alt="">
+                    <img src="images/crop1-3-mag.webp" alt="">
+                    <img src="images/crop1-4-mag.webp" alt="">
+                </div>
+            </div>
 
-        <!--color selection radio-->
-       <h3>Select color</h3>
-        <div class="colors">
-            <input type="radio" hidden id="magenta" class="color" name="color" value="magenta" checked>
-            <label for="magenta" class="color-selection check" id="magenta"></label>
-            <input type="radio" hidden id="black" name="color" value="black">
-            <label for="black" class="color-selection" id="black"></label>
-            <input type="radio" hidden id="purple" name="color" value="purple">
-            <label for="purple" class="color-selection" id="purple"></label>
-            <input type="radio" hidden id="white" name="color" value="white">
-            <label for="white" class="color-selection" id="white"></label>
-        </div>
+            <!--product description and price-->
+            <div class="product-info">
+                <h1>Gypsy tie back crop top</h1>
+                <p>Lorem ipsum dolor sit amet</p>
+                <h2>$39.89</h2>
 
-        <!--size selection radio-->
-        <h3>Select size</h3>
-        <div class="sizes">
-            <input type="radio" name="size" hidden id="size" checked>
-            <label for="size" class="size-selection check">XS</label>
-            <input type="radio" name="size" hidden id="size">
-            <label for="size" class="size-selection">S</label>
-            <input type="radio" name="size" hidden id="size">
-            <label for="size" class="size-selection">M</label>
-            <input type="radio" name="size" hidden id="size">
-            <label for="size" class="size-selection">L</label>
-        </div>
+                <!--color selection radio-->
+                <h3>Select color</h3>
+                <div class="colors">
+                    <input type="radio" hidden id="magenta" class="color" name="color" value="magenta" checked>
+                    <label for="magenta" class="color-selection" id="magenta"><img src="images/crop1-1-mag.webp"></label>
 
-        <!--check-out and save buttons-->
-        <button type="button" class="add-cart">Add to cart</button>
-        <button type="button" class="save-later">Save for later</button>
+                    <input type="radio" hidden id="black" name="color" value="black">
+                    <label for="black" class="color-selection" id="black"><img src="images/crop1-1-black.webp"></label>
+
+                    <input type="radio" hidden id="purple" name="color" value="purple">
+                    <label for="purple" class="color-selection" id="purple"><img src="images/crop1-1-pur.webp"></label>
+
+                    <input type="radio" hidden id="white" name="color" value="white">
+                    <label for="white" class="color-selection" id="white"><img src="images/crop1-1-white.webp"></label>
+                </div>
+
+                <!--size selection radio-->
+                <h3>Select size</h3>
+                <div class="sizes">
+                    <input type="radio" name="size" hidden id="size" checked>
+                    <label for="size" class="size-selection">XS</label>
+
+                    <input type="radio" name="size" hidden id="size">
+                    <label for="size" class="size-selection">S</label>
+
+                    <input type="radio" name="size" hidden id="size">
+                    <label for="size" class="size-selection">M</label>
+
+                    <input type="radio" name="size" hidden id="size">
+                    <label for="size" class="size-selection">L</label>
+                </div>
+            
+
+                <div class="checkout">
+                    <!--check-out and save buttons-->
+                    <button type="button" class="add-cart">Add to cart</button>
+                    <button type="button" class="save-later">Save for later</button>
+                </div>
+            </div>
+
+        </div>     
+        </section>
 
         <!--detailed product description-->
-        <section id="product-desc">
+        <div id="product-desc">
             <h3>Details</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </section>
+        </div>  
 
         <!--product carousel-->
         <section class="product-section">
@@ -129,7 +145,6 @@
             </div>
         </section>
     </main>
-
 
     <footer>
         <div class="footer"></div>

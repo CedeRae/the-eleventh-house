@@ -130,9 +130,8 @@ label #up {
         font-size: 24px;
         margin: 5px;
     }
-    /*drop down menu*/
     .nav-list {
-        display: none;
+        font-size: 12px;
     }
 
     
