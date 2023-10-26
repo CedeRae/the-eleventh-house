@@ -145,13 +145,14 @@ h1 {
 
     /*product images*/
     .image-carousel {
-        align-self: center;
         width: 100%;
+        margin: 0;
     }
 
     .product-info {
         width: 100%;
-        margin-left: 30px;
+        /*margin-left: 30px;*/
+        margin-right: 0;
     }
 
     /*image carousel displaying selected image*/
