@@ -12,7 +12,7 @@ const createNav = () => {
             <li><i class="fa fa-home"></i><a href="index.html">Home</a></li>
             <li><i class="fa fa-sun-o"></i><a href="#">Gypsy</a></li>
             <li><i class="fa fa-moon-o"></i><a href="#">Bohemia</a></li>
-            <li><i class="fa fa-diamond"></i><a href="#">Accessories</a></li>
+            <li><i class="fa fa-diamond"></i><a href="#">Jewelry</a></li>
             <li><i class="fa fa-shopping-bag"></i><a href="#">Cart</a></li>
         </ul>
         

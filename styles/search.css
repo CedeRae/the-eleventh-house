@@ -27,3 +27,9 @@ span {
         grid-template-columns: repeat(3, 1fr);
     }
 }
+
+@media screen and (max-width: 450px) {
+    .search-products .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

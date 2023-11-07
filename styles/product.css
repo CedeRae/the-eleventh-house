@@ -1,7 +1,7 @@
 @import 'home.css';
 
 
-body {
+html {
     padding-top: 10rem;
     overflow-x: hidden;
    
@@ -134,7 +134,7 @@ h1 {
 
 @media only screen and (max-width: 700px) {
 
-    body {
+    html {
         padding-top: 5rem;
     }
     
