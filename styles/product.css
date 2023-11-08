@@ -1,18 +1,16 @@
-@import 'home.css';
+/*@import 'home.css';*/
 
 
-html {
+body {
     padding-top: 10rem;
-    overflow-x: hidden;
-   
+    /*overflow-x: hidden;*/
+    
 }
 
 h1 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    display: flex;
-    justify-content: flex-start;
-    font-size: 48px;
-    margin-left: 20px;
+    display: block;
+    margin-left: 40px;
 }
 
 /*product details section/ top section*/
@@ -66,9 +64,14 @@ h1 {
     align-items: center;
 }
 
+h3 {
+    margin-left: 40px;
+}
+
 /*color selection*/
 .colors {
-    margin-left: 40px;
+    display: block;
+    margin: auto 40px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 5px;   
@@ -88,7 +91,8 @@ h1 {
 
 /*size selection*/
 .sizes {
-    margin-left: 40px;
+    display: block;
+    margin: auto 40px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 5px;
@@ -112,7 +116,8 @@ h1 {
 
 /*detailed product description*/
 #product-desc {
-    margin: 40px;
+    display: block;
+    margin: auto 40px;
 }
 
 /*checkout section*/
@@ -134,7 +139,7 @@ h1 {
 
 @media only screen and (max-width: 700px) {
 
-    html {
+    body {
         padding-top: 5rem;
     }
     
