@@ -1,0 +1,23 @@
+body {
+    background-color: black;
+    color: white;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+img {
+    height: 70px;
+    display: block;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: 'MedievalSharp';
+    text-align: center;
+}
+
+input {
+    background-color: grey;
+    width: 100%;
+    margin: 10px auto;
+}
