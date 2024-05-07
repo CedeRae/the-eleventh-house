@@ -16,6 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap" rel="stylesheet">
     <!--icons-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -29,10 +30,10 @@
             <!--image carousel-->
             <div class="image-carousel">
                 <div class="product-images">
-                    <img src="images/crop1-1-mag.webp" alt="" class="active">
-                    <img src="images/crop1-2-mag.webp" alt="">
-                    <img src="images/crop1-3-mag.webp" alt="">
-                    <img src="images/crop1-4-mag.webp" alt="">
+                    <img id="carousel1" src="images/crop1-1-mag.webp" alt="" class="active">
+                    <img id="carousel2" src="images/crop1-2-mag.webp" alt="">
+                    <img id="carousel3" src="images/crop1-3-mag.webp" alt="">
+                    <img id="carousel4" src="images/crop1-4-mag.webp" alt="">
                 </div>
             </div>
 
@@ -41,15 +42,16 @@
                 <h2>$39.89</h2>
                 
                 <!--color selection radio-->
+            <form id="radio-box">
                 <h3>Select color</h3>
                 <div class="colors">
-                    <input type="radio" hidden id="magenta" class="color" name="color" value="magenta" checked>
-                    <label for="magenta" class="color-selection check" id="magenta"><img src="images/crop1-1-mag.webp"></label>
+                    <input type="radio" hidden id="magenta" name="color" value="mag" checked>
+                    <label for="magenta" class="color-selection" id="magenta"><img src="images/crop1-1-mag.webp"></label>
 
                     <input type="radio" hidden id="black" name="color" value="black">
                     <label for="black" class="color-selection" id="black"><img src="images/crop1-1-black.webp"></label>
 
-                    <input type="radio" hidden id="purple" name="color" value="purple">
+                    <input type="radio" hidden id="purple" name="color" value="pur">
                     <label for="purple" class="color-selection" id="purple"><img src="images/crop1-1-pur.webp"></label>
 
                     <input type="radio" hidden id="white" name="color" value="white">
@@ -71,12 +73,13 @@
                     <input type="radio" name="size" value="l" hidden id="l-size">
                     <label for="l-size" class="size-selection">L</label>
                 </div>
-            
+                
 
                 <div class="checkout">
                     <!--check-out button-->
-                    <button type="button" class="add-cart">Add to cart</button>
+                    <button type="submit" class="add-cart">Add to cart</button>
                 </div>
+            </form>
             </div>
 
         </div>     
@@ -147,6 +150,24 @@
     <footer>
         <div class="footer"></div>
     </footer>
+
+
+    <script>
+
+            $("#radio-box").change(function() {
+       
+                let color = $("input[name = 'color']:checked").val();
+
+                $(".image-carousel").css('background-image', 'url(' + `../images/crop1-1-${color}.webp` + ')');
+
+                $("#carousel1").attr('src', `images/crop1-1-${color}.webp`);
+                $("#carousel2").attr('src', `images/crop1-2-${color}.webp`);
+                $("#carousel3").attr('src', `images/crop1-3-${color}.webp`);
+                $("#carousel4").attr('src', `images/crop1-4-${color}.webp`);
+
+            });
+
+    </script>
 
     <script src="js/nav.js"></script>
     <script src="js/home.js"></script>

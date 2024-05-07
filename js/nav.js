@@ -10,10 +10,10 @@ const createNav = () => {
     <div class="header">
         <ul>
             <li><i class="fa fa-home"></i><a href="index.html">Home</a></li>
-            <li><i class="fa fa-sun-o"></i><a href="#">Gypsy</a></li>
-            <li><i class="fa fa-moon-o"></i><a href="#">Bohemia</a></li>
+            <li><i class="fa fa-sun-o"></i><a href="404.html">Gypsy</a></li>
+            <li><i class="fa fa-moon-o"></i><a href="404.html">Bohemia</a></li>
             <li><i class="fa fa-diamond"></i><a href="404.html">Jewelry</a></li>
-            <li><i class="fa fa-shopping-bag"></i><a href="#">Cart</a></li>
+            <li><i class="fa fa-shopping-bag"></i><a href="404.html">Cart</a></li>
         </ul>
         
     </div>
