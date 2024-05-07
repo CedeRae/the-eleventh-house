@@ -25,3 +25,14 @@ sizeBtns.forEach((item, i) => {
         checkedBtn = i;
     })
 });
+
+const colorBtns = document.querySelectorAll('.color-selection');
+let checkedClr = 0;
+
+colorBtns.forEach((item, i) => {
+    item.addEventListener('click', () => {
+        colorBtns[checkedClr].classList.remove('check');
+        item.classList.add('check');
+        checkedClr = i;
+    })
+})

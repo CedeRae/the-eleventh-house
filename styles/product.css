@@ -182,4 +182,12 @@ h3 {
     height: 40px;
     width: 40px;
    }
+
+   .size-selection {
+    width: 90px;
+   }
+
+   .colors img {
+    width: 90px;
+   }
 }
