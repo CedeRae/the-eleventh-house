@@ -17,6 +17,10 @@
    <!--icons-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <!--jquery and objects list-->
+    <script src="js/items.js" type="application/x-javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -30,59 +34,8 @@
         <h4>Women's apparel</h4>
     </section>  
 
-    <!--product carousel-->
-    <h2>Best Selling</h2>
-    <section class="product-section">
-            
-            <button class="left"> 
-                <i class="fa fa-angle-double-left" style="font-size:36px"></i>
-            </button>
-            <button class="right">
-                <i class="fa fa-angle-double-right" style="font-size:36px"></i>
-            </button>
-<div class="container">
-            <a href="#"><img src="images/skirt1-1-black.webp" alt="bunched skirt-color black">
-                <h3>Product</h3>
-                <h3>$00.00</h3>
-                <p>Short description</p>
-            </a>
-            <a href="#"><img src="images/dress1-1-oriental.webp" alt="slit dress-oriental pattern">
-                <h3>Product</h3>
-                <h3>$00.00</h3>
-                <p>Short description</p>
-            </a>
-            <a href="#"><img src="images/pants3-1-orange.webp" alt="baggy draw string pants-orange pattern">
-                <h3>Product</h3>
-                <h3>$00.00</h3>
-                <p>Short description</p>
-            </a>
-            <a href="#"><img src="images/pants4-1-black.webp" alt="Loose wrap pants-black patttern">
-                <h3>Product</h3>
-                <h3>$00.00</h3>
-                <p>Short description</p>
-            </a>
-            <a href="#"><img src="images/vest1-1-stripe.webp" alt="sleeveless vest-red stripe pattern">
-                <h3>Product</h3>
-                <h3>$00.00</h3>
-                <p>Short description</p>
-            </a>
-            <a href="#"><img src="images/jump3-2-floral.webp" alt="wide leg overalls-floral pattern">
-                <h3>Product</h3>
-                <h3>$00.00</h3>
-                <p>Short description</p>
-            </a>
-            <a href="#"><img src="images/dress4-1-rust.webp" alt="midi maxi dress-mink">
-                <h3>Product</h3>
-                <h3>$00.00</h3>
-                <p>Short description</p>
-            </a>
-            <a href="#"><img src="images/vest3-1-khaki.webp" alt="mandarin collar jacket shirt-khaki pattern">
-                <h3>Product</h3>
-                <h3>$00.00</h3>
-                <p>Short description</p>
-            </a>
-        </div>
-    </section>
+    <!--product carousels-->
+    <div class="product-container"></div>
 
     <!--collections section-->
     <h2>Shop our Collections</h2>
@@ -98,170 +51,46 @@
         </div>
     </section>
 
-    <!--product carousel-->
-    <h2><a href="search.html">Tops</a></h2>
-    <section class="product-section">
-        
-            <button class="left"> 
-                <i class="fa fa-angle-double-left" style="font-size:36px"></i>
-            </button>
-            <button class="right">
-                <i class="fa fa-angle-double-right" style="font-size:36px"></i>
-            </button>
-<div class="container">
-            <a href="product.html"><img src="images/crop1-1-mag.webp" alt="crop top magenta pattern">
-                <h3>Click Me!</h3>
-                <h3>$00.00</h3>
-                <p>Short description</p>
-            </a>
-            <a href="#"><img src="images/top1-1-blue.webp" alt="sleevless blouse-indego pattern">
-                <h3>Product</h3>
-                <h3>$00.00</h3>
-                <p>Short description</p>
-            </a>
-            <a href="#"><img src="images/top2-1-flloral.webp" alt="loose tank top-floral print">
-                <h3>Product</h3>
-                <h3>$00.00</h3>
-                <p>Short description</p>
-            </a>
-            <a href="#"><img src="images/top3-1-rb.webp" alt="long sleeve crop top-red/blue print">
-                <h3>Product</h3>
-                <h3>$00.00</h3>
-                <p>Short description</p>
-            </a>
-            <a href="#"><img src="images/top4-1-black.webp" alt="long sleeve button up crop top-black">
-                <h3>Product</h3>
-                <h3>$00.00</h3>
-                <p>Short description</p>
-            </a>
-            <a href="#"><img src="images/top5-1-grey.webp" alt="loose tank top-light grey">
-                <h3>Product</h3>
-                <h3>$00.00</h3>
-                <p>Short description</p>
-            </a>
-            <a href="#"><img src="images/top6-1-black.webp" alt="bat wing top-black">
-                <h3>Product</h3>
-                <h3>$00.00</h3>
-                <p>Short description</p>
-            </a>
-            <a href="#"><img src="images/vest2-1-oriental.webp" alt="long sleeve vest-oriental pattern">
-                <h3>Product</h3>
-                <h3>$00.00</h3>
-                <p>Short description</p>
-            </a>
-        </div>
-    </section>
-
-    <!--product carousel-->
-    <h2><a href="#">Pants</a></h2>
-    <section class="product-section">
-            
-            <button class="left"> 
-                <i class="fa fa-angle-double-left" style="font-size:36px"></i>
-            </button>
-            <button class="right">
-                <i class="fa fa-angle-double-right" style="font-size:36px"></i>
-            </button>
-<div class="container"> 
-            <a href="#"><img src="images/pants1-1-rasta.webp" alt="harem pants-rastafarian colors/ pattern">
-                <h3>Product</h3>
-                <h3>$00.00</h3>
-                <p>Short description</p>
-            </a>
-            <a href="#"><img src="images/pants2-1-orange.webp" alt="baggy harem pants-orange pattern">
-                <h3>Product</h3>
-                <h3>$00.00</h3>
-                <p>Short description</p>
-            </a>
-            <a href="#"><img src="images/pants4-1-blue.webp" alt="Loose wrap pants-indego pattern">
-                <h3>Product</h3>
-                <h3>$00.00</h3>
-                <p>Short description</p>
-            </a>
-            <a href="#"><img src="images/pants3-1-navy.webp" alt="loose draw string pants-indego">
-                <h3>Product</h3>
-                <h3>$00.00</h3>
-                <p>Short description</p>
-            </a>
-            <a href="#"><img src="images/jump1-1-dark.webp" alt="open back wide leg jumpsuit-dark pattern">
-                <h3>Product</h3>
-                <h3>$00.00</h3>
-                <p>Short description</p>
-            </a>
-            <a href="#"><img src="images/pants5-1-red.webp" alt="open wide leg pants-red">
-                <h3>Product</h3>
-                <h3>$00.00</h3>
-                <p>Short description</p>
-            </a>
-            <a href="#"><img src="images/pants6-1-prink.webp" alt="wide leg pants-pink pattern">
-                <h3>Product</h3>
-                <h3>$00.00</h3>
-                <p>Short description</p>
-            </a>
-            <a href="#"><img src="images/jump2-1-retro.webp" alt="open wrap jumpsuit-retro pattern">
-                <h3>Product</h3>
-                <h3>$00.00</h3>
-                <p>Short description</p>
-            </a>
-            <a href="#"><img src="images/jump1-1-blue.webp" alt="open back wide leg jumpsuit-blue">
-                <h3>Product</h3>
-                <h3>$00.00</h3>
-                <p>Short description</p>
-            </a>
-        </div>
-    </section>
-
-    <!--product carousel-->
-    <h2><a href="#">Skirts</a></h2>
-    <section class="product-section"> 
-            
-            <button class="left"> 
-                <i class="fa fa-angle-double-left" style="font-size:36px"></i>
-            </button>
-            <button class="right">
-                <i class="fa fa-angle-double-right" style="font-size:36px"></i>
-            </button>
-<div class="container"> 
-            <a href="#"><img src="images/skirt1-1-orange.webp" alt="bunched skirt-orange/blue pattern">
-                <h3>Product</h3>
-                <h3>$00.00</h3>
-                <p>Short description</p>
-            </a>
-            <a href="#"><img src="images/skirt2-1-ethnic.webp" alt="flowy long skirt-ethnic pattern">
-                <h3>Product</h3>
-                <h3>$00.00</h3>
-                <p>Short description</p>
-            </a>
-            <a href="#"><img src="images/skirt2-1-floral.webp" alt="uneven midi skirt-floral pattern">
-                <h3>Product</h3>
-                <h3>$00.00</h3>
-                <p>Short description</p>
-            </a>
-            <a href="#"><img src="images/dress2-1-orange.webp" alt="short tunic dress-muted orange">
-                <h3>Product</h3>
-                <h3>$00.00</h3>
-                <p>Short description</p>
-            </a>
-            <a href="#"><img src="images/skirt4-1-blue.webp" alt="mini skirt-blue pattern">
-                <h3>Product</h3>
-                <h3>$00.00</h3>
-                <p>Short description</p>
-            </a>
-            <a href="#"><img src="images/skirt5-1-green.webp" alt="flowy long skirt-green pattern">
-                <h3>Product</h3>
-                <h3>$00.00</h3>
-                <p>Short description</p>
-            </a>
-            <a href="#"><img src="images/dress3-1-ethnic.webp" alt="long slit dress-ethnic pattern">
-                <h3>Product</h3>
-                <h3>$00.00</h3>
-                <p>Short description</p>
-            </a>
-        </div>
-    </section>
     
     <footer class="footer"></footer>
 
+    <script>
+
+        var html = "";
+        for (var i in items) {
+            let item = items[i];
+            console.log(item);
+
+            var productHtml = "";
+            var list = item['products'];
+
+            for (p of list) {
+
+                productHtml += `<a href="product.html">
+                                    <img src="${p['image']}" alt="${p['description']}">
+                                    <h3>${p['title']}</h3>
+                                    <h3>$${p['price']}</h3>
+                                    <p>${p['description']}</p>
+                                </a>`;
+            }
+
+            html += `<h2>${item['category']}</h2>
+                    <section class="product-section>
+                        <button class="left"> 
+                            <i class="fa fa-angle-double-left" style="font-size:36px"></i>
+                        </button>
+                        <button class="right">
+                            <i class="fa fa-angle-double-right" style="font-size:36px"></i>
+                        </button>
+                        <div class="container">${productHtml}</div>
+                    </section>`
+        }
+        $('.product-container').append(html);
+
+        
+
+    </script>
+    
     <script src="js/nav.js"></script>
     <script src="js/foot.js"></script>
     <script src="js/home.js"></script>

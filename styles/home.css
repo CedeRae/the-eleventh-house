@@ -56,7 +56,7 @@ h2 a {
     overflow: hidden;
 }
 
-.container::-webkit-scrollbar {
+.containers::-webkit-scrollbar {
     display: none;
 }
 
