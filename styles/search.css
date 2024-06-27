@@ -1,0 +1,35 @@
+@import 'home.css';
+
+.search-results {
+    padding-top: 3rem;
+    text-transform: capitalize;
+}
+
+.heading {
+    text-decoration: none;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+span {
+    font-weight: bold;
+}
+
+.search-products .container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-left: 20px;
+}
+
+@media screen and (max-width: 700px) {
+    .search-products .container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .search-products .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

@@ -6,13 +6,10 @@
     margin: 0;
 }
 
-body {
-    margin-top: 100px;
-}
-
 h2 {
     margin-left: 2rem;
     text-decoration: overline;
+    margin: 40px;
 }
 
 h2 a {
@@ -21,7 +18,7 @@ h2 a {
     cursor: pointer;
 }
 
-/*porducts*/
+/*hero section*/
 .hero-section {
     height: 100vh;
     opacity: 0.75;
@@ -44,15 +41,22 @@ h2 a {
     font-family: 'MedievalSharp';
 }
 
+.product-section {
+    display: flex;
+    align-items: flex-start;
+}
+
+/*porducts*/
 .container {
     display: flex;
     align-items: center;
     overflow-x: auto;
     scroll-behavior: smooth;
-    margin-bottom: 30px;
+    margin: 0 40px 20px 40px;
+    overflow: hidden;
 }
 
-.container::-webkit-scrollbar {
+.containers::-webkit-scrollbar {
     display: none;
 }
 
@@ -72,9 +76,10 @@ h2 a {
 .left, .right {
     border: none;
     background: none;
-    z-index: 8;
+    z-index: 2;
     position: absolute;
     opacity: 1;
+    padding-top: 60px;
 }
 
 .right {
@@ -85,7 +90,7 @@ button:hover {
     transform: scale(1.1);
 }
 
-/*collections section*/
+/*collections*/
 .collection {
     display: grid;
     grid-template-areas: 2;
@@ -170,8 +175,9 @@ button:hover {
 
 
 @media only screen and (max-width: 600px) {
-    .left, .right {
-        display: none;
+
+    body {
+        margin-top: 5rem;
     }
 
     .hero-section {
@@ -196,5 +202,11 @@ button:hover {
 
     #accessories {
         height: 50vh;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .left, .right {
+        display: none;
     }
 }
